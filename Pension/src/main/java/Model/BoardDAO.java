@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.Vector;
 
 public class BoardDAO{
-	ResultSet rs; //데이터 베이스의 테이블의 결과를 리턴 받아 자바에 저장해 주는 객체
+	ResultSet rs; // 데이터 베이스의 테이블의 결과를 리턴 받아 자바에 저장해 주는 객체
 	Connection conn;//데이터베이스에 접근할수 있도록 설정 
 	PreparedStatement pstmt;//데이터 베이스에서 쿼리를 실행시켜주는 객체 
 
