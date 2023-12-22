@@ -15,7 +15,7 @@ public class BoardDAO{
 	public void getcon() {  //DB연결
 		try {
 			String dbURL = "jdbc:oracle:thin:@localhost:1521:xe";
-			String dbID = "c##scott";
+			String dbID = "scott";
 			String dbPassword = "tiger";
 			
 			 // 환경 변수 설정 (윈도우용 예시)

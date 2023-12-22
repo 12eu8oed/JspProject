@@ -10,7 +10,7 @@ import java.util.Vector;
 public class LocationInfoDAO {
 
 	// 오라클에 접속하는 소스를 작성
-	String id = "C##SCOTT";
+	String id = "SCOTT";
 	String pass = "tiger";
 	String url = "jdbc:oracle:thin:@localhost:1521:XE";
 

@@ -10,14 +10,14 @@ import java.util.Vector;
 public class PensionDAO {
 
 	// 오라클에 접속하는 소스를 작성
-	String id = "C##SCOTT";
+	String id = "SCOTT";
 	String pass = "tiger";
 	String url = "jdbc:oracle:thin:@localhost:1521:XE";
 
 	Connection con; // 데이터베이스에 접근할수 있도록 설정
 	PreparedStatement pstmt; // 데이터베이스에서 쿼리를 실행시켜주는 객체
 	ResultSet rs;
-	
+
 	// 데이터 베이스에 접근할수 있도록 도와주는 메소드
 	public void getCon() {
 
@@ -317,7 +317,7 @@ public class PensionDAO {
 		}
 
 	}
-	
+
 	// 데이터베이스에 넣은 코드에 다시 0넣기
 	public void inputCode0(int id) {
 
@@ -339,7 +339,8 @@ public class PensionDAO {
 		}
 
 	}
-	//전화번호 넣기
+
+	// 전화번호 넣기
 	public void inputPhone(String phone, int id) {
 
 		getCon();
@@ -360,27 +361,27 @@ public class PensionDAO {
 		}
 
 	}
-	
-	//전화번호에 다시 0넣기
-		public void inputPhone0(int id) {
 
-			getCon();
+	// 전화번호에 다시 0넣기
+	public void inputPhone0(int id) {
 
-			try {
+		getCon();
 
-				String sql = "update Pension set phone=? where id=?";
-				pstmt = con.prepareStatement(sql);
-				pstmt.setInt(1, 0);
-				pstmt.setInt(2, id);
+		try {
 
-				// 결과를 리턴
-				rs = pstmt.executeQuery();
+			String sql = "update Pension set phone=? where id=?";
+			pstmt = con.prepareStatement(sql);
+			pstmt.setInt(1, 0);
+			pstmt.setInt(2, id);
 
-				con.close();
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
+			// 결과를 리턴
+			rs = pstmt.executeQuery();
 
+			con.close();
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
+
+	}
 
 }
