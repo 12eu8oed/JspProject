@@ -54,7 +54,7 @@
 		int re_level = Integer.parseInt(request.getParameter("re_level"));
 	%>
 
-	<form name="writeForm" action="BoardReWriteProc.jsp" method="post" onsubmit="return validateForm()">
+	<form name="writeForm" action="BoardReWriteProc.jsp" method="post" onsubmit="return validateForm()"  accept-charset="UTF-8">
 		<table width="600" border="1" bordercolor="gray" bgcolor="skyblue">
 			<tr height = "40">
 				<td width="150" align="center"> 작성자</td>

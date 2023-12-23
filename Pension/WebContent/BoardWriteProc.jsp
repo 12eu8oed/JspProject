@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<!-- <meta charset="UTF-8"> -->
 <title>Insert title here</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
 	%>
 
 	<!-- 게시글 작성한 데이터를 한번에 읽어 드림  -->
-		<jsp:useBean id = "boardbean" class= "Model.BoardBean">
+	<jsp:useBean id = "boardbean" class= "Model.BoardBean">
 		<jsp:setProperty name="boardbean" property = "*" />
 	</jsp:useBean>
 	

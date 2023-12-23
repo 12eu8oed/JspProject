@@ -4,7 +4,7 @@
 <%@ page import ="java.util.Vector"%>
 <!DOCTYPE html>
 <head>
-<meta charset="UTF-8">
+<!-- <meta charset="UTF-8"> -->
 <title></title>
 <style>
   .button-link {
@@ -56,7 +56,7 @@
 	<h2> 게시글 쓰기 </h2>
 	
 	<center>
-		<form name="writeForm" action="BoardWriteProc.jsp" method="post" onsubmit="return validateForm()">		
+		<form name="writeForm" action="BoardWriteProc.jsp" method="post" onsubmit="return validateForm()" accept-charset="UTF-8">	
 			<table	width ="600" border = "1" bordercolor = "gray" bgcolor = "skyblue" >
 				<tr height="40">
 						<td align = "center" width ="150">작성자</td>

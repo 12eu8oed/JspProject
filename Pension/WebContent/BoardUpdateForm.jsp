@@ -34,7 +34,7 @@
     BoardDAO bdao = new BoardDAO();
     BoardBean bean = bdao.getOneUpdateBoard(num);
 %>
-<form name="writeForm" action="BoardUpdateProc.jsp" method ="post" onsubmit="return validateForm()">
+<form name="writeForm" action="BoardUpdateProc.jsp" method ="post" onsubmit="return validateForm()" accept-charset="UTF-8">
     <table width = "600" border = "1" bgcolor="skyblue">
         <tr height= "40">
             <td width="120" align="center">작성자</td>

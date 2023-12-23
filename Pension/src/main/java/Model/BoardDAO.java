@@ -20,7 +20,7 @@ public class BoardDAO{
 			
 			 // 환경 변수 설정 (윈도우용 예시)
             System.setProperty("oracle.jdbc.defaultNChar", "true");
-            System.setProperty("NLS_LANG", "KOREAN_KOREA.KO16KSC5601");
+            System.setProperty("NLS_LANG", "KOREAN_KOREA.AL32UTF8");
 			
             //드라이버 등록 연결 설정
 			Class.forName("oracle.jdbc.driver.OracleDriver");
