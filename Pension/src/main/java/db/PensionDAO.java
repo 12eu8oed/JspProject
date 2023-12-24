@@ -31,7 +31,7 @@ public class PensionDAO {
 		}
 	}
 
-	// 모든 이미 예약된 펜션을 검색하는 매소드
+	// 이미 예약된 펜션을 모두 검색하는 매소드
 	public Vector<PensionBean> getAllPension() {
 		// 리턴 타입을 설정
 		Vector<PensionBean> v = new Vector<>();
@@ -41,7 +41,7 @@ public class PensionDAO {
 		getCon();// 커넥션이 연결되어야 쿼리를 실행가능
 
 		try {
-			String sql = "select * from Pension where status=1";
+			String sql = "select * from Pension where status=1"; //숫자1이 예약되어있는 것을 의미
 			pstmt = con.prepareStatement(sql);
 
 			// 결과를 리턴
