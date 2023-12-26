@@ -14,7 +14,7 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-weight: bold; /* 글씨체 굵게 설정 */
+    font-weight: bold; /* 글씨체 굵게 설정 정*/
   }
 
   .button-link:hover {
