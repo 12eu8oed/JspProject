@@ -19,7 +19,7 @@
     cursor: pointer;
     font-weight: bold;
   }
-  .button-link:hover {
+  .button-link:hover { 
     background-color: #FF8800;
   }
 </style>
